@@ -36,8 +36,16 @@ a {
 
 .skills-card {
   display: grid;
-  grid-template-columns:auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
 }
 
 .skills-card img {
