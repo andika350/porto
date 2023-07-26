@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html, body {
+html,
+body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,5 +24,38 @@ a {
 
 @font-face {
   font-family: "burtons";
-  src: url('../public/Burtons.otf')
+  src: url("../public/Burtons.otf");
+}
+
+.skills {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.skills-card {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  gap: 15px;
+}
+
+.skills-card img {
+  max-width: 80px;
+  transition: transform 0.2s;
+}
+
+.card {
+  box-shadow: 0 5pxx 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #dadada;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-card img:hover {
+  cursor: pointer;
+  transform: scale(1.15);
 }

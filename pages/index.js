@@ -1,15 +1,12 @@
 import Head from "next/head";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import { AiFillLinkedin, AiFillInstagram, AiFillGithub, FaWhatsapp} from "react-icons/ai";
+import Skills from "./components/Skills";
 import Image from "next/image";
-import deved from "../public/foto.jpg";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import { Inter } from "next/font/google";
+import Intro from "./components/Intro";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,104 +19,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <main className="px-10 mb-40 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          <div className="p-10 text-center">
-            <h2 className="py-2 text-5xl font-medium text-teal-600">
-              Andika Satrio
-            </h2>
-            <h3 className="py-2 text-2xl ">FrontEnd Developer.</h3>
-            <p className="py-5 leading-8 text-gray-500 text-md">
-              Striving to self learn all it need to be a good developer, on my
-              path to glory and beyond, logic is key
-            </p>
-          </div>
-
-          <div className="relative mx-auto mt-5 mb-10 overflow-hidden rounded-full w-80 h-80">
-            <Image src={deved} alt="Foto si Dika" />
-          </div>
-
-          <div className="flex justify-center gap-16 py-3 text-5xl text-gray-500">
-            <a href="https://www.linkedin.com/in/andika-satrio-477570183/">
-              <AiFillLinkedin />
-            </a>
-            <a href="https://www.instagram.com/andikastp/">
-              <AiFillInstagram />
-            </a>
-            <a href="https://github.com/andika350">
-              <AiFillGithub />
-            </a>
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <h3 className="py-1 text-3xl">Services I offer</h3>
-            <p className="py-5 leading-8 text-gray-500 text-md">
-              Striving to self learn all it need to be a good developer, on my
-              path to glory and beyond, logic is key
-              <p className="py-5 leading-8 text-gray-500 text-md">
-                Striving to self learn all it need to be a good developer, on my
-                path to glory and beyond, logic is key
-              </p>
-            </p>
-            <p className="py-5 leading-8 text-gray-500 text-md">
-              Striving to self learn all it need to be a good developer, on my
-              path to glory and beyond, logic is key
-            </p>
-          </div>
-          <div className="gap-5 md:flex">
-            <div className="p-10 my-10 text-center shadow-lg rounded-xl">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="pt-8 pb-2 text-lg font-medium">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant design suited for your needs, design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="py-1 text-gray-800">Photoshop</p>
-              <p className="py-1 text-gray-800">Figma</p>
-              <p className="py-1 text-gray-800">Illustrator</p>
-            </div>
-            <div className="p-10 my-10 text-center shadow-lg rounded-xl">
-              <Image src={code} width={100} height={100} className="mx-auto" />
-              <h3 className="pt-8 pb-2 text-lg font-medium">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant design suited for your needs, design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="py-1 text-gray-800">Photoshop</p>
-              <p className="py-1 text-gray-800">Figma</p>
-              <p className="py-1 text-gray-800">Illustrator</p>
-            </div>
-            <div className="p-10 my-10 text-center shadow-lg rounded-xl">
-              <Image
-                src={consulting}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="pt-8 pb-2 text-lg font-medium">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant design suited for your needs, design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="py-1 text-gray-800">Photoshop</p>
-              <p className="py-1 text-gray-800">Figma</p>
-              <p className="py-1 text-gray-800">Illustrator</p>
-            </div>
-          </div>
-        </section>
+      <main className="px-10">
+        <Intro />
+        <Skills />
         <section>
           <div>
             <h3 className="py-1 text-3xl">Projects</h3>
