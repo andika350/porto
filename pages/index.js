@@ -3,8 +3,10 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
+import porto1 from "../public/porto1.png";
+import porto2 from "../public/porto2.png";
+import porto3 from "../public/porto3.png";
+import porto4 from "../public/porto4.png";
 import { Inter } from "next/font/google";
 import Intro from "./components/Intro";
 
@@ -26,21 +28,26 @@ export default function Home() {
           <div>
             <h3 className="py-1 text-3xl">Projects</h3>
             <p className="py-5 leading-8 text-gray-500 text-md">
-              Striving to self learn all it need to be a good developer, on my
-              path to glory and beyond, logic is key. Striving to self learn all
-              it need to be a good developer, on my path to glory and beyond,
-              logic is key
+              These are some projects that I have done to show case my skills
+              and studies.
             </p>
           </div>
-          <div className="gap-5 lg:flex">
+          <div className="gap-5 text-gray-500 cursor-pointer porto lg:flex">
             <div className="m-5">
-              <Image src={web1} className="rounded-lg" width={"100%"} />
+              <h3>Weather App</h3>
+              <Image src={porto1} className="rounded-lg" width={"100%"} />
             </div>
             <div className="m-5">
-              <Image src={web2} className="rounded-lg" width={"100%"} />
+              <h3>Book List App</h3>
+              <Image src={porto2} className="rounded-lg" width={"100%"} />
             </div>
             <div className="m-5">
-              <Image src={web1} className="rounded-lg" width={"100%"} />
+              <h3>MERN Personal Blog</h3>
+              <Image src={porto3} className="rounded-lg" width={"100%"} />
+            </div>
+            <div className="m-5">
+              <h3>Promptia AI sharing snippet</h3>
+              <Image src={porto4} className="rounded-lg" width={"100%"} />
             </div>
           </div>
         </section>
