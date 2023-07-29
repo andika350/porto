@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Nav = () => {
   return (
@@ -7,7 +7,8 @@ const Nav = () => {
       <ul className="flex items-center">
         <li>
           <a
-            href="#"
+            id="projects-btn"
+            href="#projects"
             className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-cyan-500 to-teal-600"
           >
             Projects
@@ -16,6 +17,6 @@ const Nav = () => {
       </ul>
     </nav>
   );
-}
+};
 
-export default Nav
+export default Nav;

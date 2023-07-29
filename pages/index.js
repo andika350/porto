@@ -25,7 +25,7 @@ export default function Home() {
         <Intro />
         <Skills />
         <section>
-          <div>
+          <div id="projects">
             <h3 className="py-1 text-3xl">Projects</h3>
             <p className="py-5 leading-8 text-gray-500 text-md">
               These are some projects that I have done to show case my skills
